@@ -2,8 +2,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   env: {
     browser: true,
-    commonjs: true,
-    es6: true,
     node: true
   },
   extends: [
@@ -15,10 +13,9 @@ module.exports = {
   },
   rules: {
     'indent': ['error', 2],
-    'max-len': ['error', 180],
-    'no-trailing-spaces': 1,
+    'max-len': ['warn', 120],
+    'no-trailing-spaces': 'warn',
     'prefer-const': 0,
-    '@typescript-eslint/ban-ts-comment': 0,
-    'max-len': 0
+    '@typescript-eslint/ban-ts-comment': 0
   }
 };
